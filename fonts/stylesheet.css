@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'UTM BryantLG';
+    src: url('UTMBryantLG.eot');
+    src: url('UTMBryantLG.eot?#iefix') format('embedded-opentype'),
+        url('UTMBryantLG.woff2') format('woff2'),
+        url('UTMBryantLG.woff') format('woff'),
+        url('UTMBryantLG.ttf') format('truetype'),
+        url('UTMBryantLG.svg#UTMBryantLG') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UTM Eremitage';
+    src: url('UTMEremitage.eot');
+    src: url('UTMEremitage.eot?#iefix') format('embedded-opentype'),
+        url('UTMEremitage.woff2') format('woff2'),
+        url('UTMEremitage.woff') format('woff'),
+        url('UTMEremitage.ttf') format('truetype'),
+        url('UTMEremitage.svg#UTMEremitage') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UTM Beautiful Caps';
+    src: url('UTMBeautifulCaps.eot');
+    src: url('UTMBeautifulCaps.eot?#iefix') format('embedded-opentype'),
+        url('UTMBeautifulCaps.woff2') format('woff2'),
+        url('UTMBeautifulCaps.woff') format('woff'),
+        url('UTMBeautifulCaps.ttf') format('truetype'),
+        url('UTMBeautifulCaps.svg#UTMBeautifulCaps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

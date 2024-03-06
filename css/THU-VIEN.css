@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document -- mobie first---*/
+@import url("../fonts/stylesheet.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Quicksand:wght@300..700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{ scroll-behavior: smooth}
+body{	
+	background: #eee;
+	 font-family: "Quicksand", sans-serif;
+	margin: 0;
+	color: #666;
+	margin-top: 100px
+	}
+h1,h2{ 
+ font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+#header
+{
+	background: #ddd;
+	position: fixed;
+	top: 0;
+	z-index: 99999999;
+	width: 100%
+}
+.nav-icon { margin: 0; list-style: none; padding: 0; display: flex}
+.nav-icon li{ margin: 10px}
+.subtitle{    font-family: 'UTM Beautiful Caps';}
+.emo
+{
+	 font-family: "Noto Color Emoji", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*{ box-sizing: border-box}
+.row{ display: flex; flex-wrap: wrap}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"]
+{
+	padding: 15px;
+	border: 1px solid red
+}
+.container{ width: 100%}
+
+.img-100{ width: 100%; height: auto}
+.text-center { text-align: center}
+.text-right{ text-align: right}
+
+/*--------- style cho ipad---tablet-------*/
+@media (min-width:768px)
+{
+	.col-md-1 {width: 8.33%;}
+	.col-md-2 {width: 16.66%;}
+	.col-md-3 {width: 25%;}
+	.col-md-4 {width: 33.33%;}
+	.col-md-5 {width: 41.66%;}
+	.col-md-6 {width: 50%;}
+	.col-md-7 {width: 58.33%;}
+	.col-md-8 {width: 66.66%;}
+	.col-md-9 {width: 75%;}
+	.col-md-10 {width: 83.33%;}
+	.col-md-11 {width: 91.66%;}
+	.col-md-12 {width: 100%;}
+}
+.container{ width: 90%; margin: auto}
+
+/*--------- style cho pc 1000 tro len-------*/
+@media (min-width:1000px)
+{
+
+	.col-lg-1 {width: 8.33%;}
+	.col-lg-2 {width: 16.66%;}
+	.col-lg-3 {width: 25%;}
+	.col-lg-4 {width: 33.33%;}
+	.col-lg-5 {width: 41.66%;}
+	.col-lg-6 {width: 50%;}
+	.col-lg-7 {width: 58.33%;}
+	.col-lg-8 {width: 66.66%;}
+	.col-lg-9 {width: 75%;}
+	.col-lg-10 {width: 83.33%;}
+	.col-lg-11 {width: 91.66%;}
+	.col-lg-12 {width: 100%;}
+	.container{ width: 80%; margin: auto}
+		
+}
+
+.navbar 
+{
+	position: relative
+}
+.navbar .btn-menu
+{ 
+	position: absolute;
+	right:0;
+	top: 40px
+}
+ul.menu
+{ 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: none
+}
+ul.menu li
+{
+	position: relative
+}
+ul.menu li a
+{
+	text-decoration: none; 
+	padding: 10px;
+	display: block;
+	border-bottom: 1px solid #ddd;
+	color: #333
+}
+ul.menu li a:hover{
+	background: tomato;
+	color: white
+}
+@media (min-width:1000px)
+{
+	ul.menu { display: flex; margin-top: 40px}
+	.navbar{ 
+		display: flex;
+		justify-content:space-between;
+		align-items: center
+	}
+	.btn-menu{ display: none}
+}
+.banner { position: relative}
+.banner-caption
+{
+	position: absolute;
+	top: 10%;
+	left: 25%; color: #fff;
+	width: 50%;
+	text-align: center;
+}	
+.banner-caption h1{ 
+	font-size: 4vw;
+	line-height: 0.9;
+	background: #E6EDB2;
+background: linear-gradient(to right, #E6EDB2 0%, #B67B34 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+.khoahoc {
+	position: relative;
+	overflow: hidden
+}
+.khoahoc-caption
+{
+	position: absolute;
+	top: 10%; left: 5%;
+	width: 90%; height: 80%;
+	text-align: center;
+	background: rgba(255,255,255,0.5);
+	opacity: 0;
+	transition: all 1s;
+	transform: scale(0) rotate(180deg)
+}
+.khoahoc:hover> .khoahoc-caption
+{
+	opacity: 1;
+	transform: scale(1) rotate(0)
+}
+.khoahoc img { transition: all 1s}
+.khoahoc:hover >img 
+{ transform: scale(2);
+filter: invert(100%)}
+
+@media (max-width:768px)
+{
+	.banner .img-100
+	{
+		height: 80vh;
+		width: 175vw
+	}
+	.banner-caption	{
+		top: 10%;
+		 left: 40%
+	}
+	.banner-caption h1{ 
+		font-size:10vw;
+		line-height: 1 }
+	.banner-caption p{ display: none}
+}
+/*-- thu vien mau text---*/
+.text-white{ color: white}
+.text-light{ color: #DDDDDD}
+.text-primary{ color: tomato}
+.text-secondary{ color: aquamarine}
+.text-dark{ color: #2F2F2F}
+/* thu vien mau nen*/
+.bg-light{ background-color: #DDDDDD}
+.bg-white{ background-color: #fff}
+.bg-primary{ background-color: tomato}
+.bg-secondary{ background-color: aquamarine}
+.bg-dark{ background-color:#2F2F2F}
+/*-- thu vien button---*/
+.btn-primary
+{
+	 background-color: tomato;
+	color: #fff;
+	padding: 10px;
+	text-decoration: none;
+	transition: all 0.5s;
+	border-radius: 5px
+	
+}
+.btn-primary:hover{
+	background-color: aquamarine;
+ 	color: #333
+}
+.btn-primary-outline
+{
+	 border:1px solid tomato;
+	color: tomato;
+	padding: 10px;
+	text-decoration: none;
+	transition: all 0.5s;
+	border-radius: 5px;
+	background-color: transparent
+	
+}
+.btn-primary-outline:hover{
+	background-color: tomato;
+ 	color: #fff
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

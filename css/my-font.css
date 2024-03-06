@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face
+{
+	font-family: font-heading;
+	src: url("../fonts/UTM Eremitage.ttf");
+	font-family: font-subtitle;
+	src: url("../fonts/UTM Beautiful Caps.ttf");
+	font-family: font-body;
+	src: url("../fonts/UTM BryantLG.ttf")
+}
+
